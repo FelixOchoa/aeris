@@ -1,0 +1,58 @@
+.sidebarContainer {
+  max-height: 100vh;
+  min-width: 15vw;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #2d3436;
+  color: #636e72;
+  padding-top: 2em;
+}
+.sidebarImg img {
+  margin-top: 2em;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.sidebarUserName p {
+  margin-top: 1em;
+  color: #dfe6e9;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  height: 100%;
+  width: 100%;
+  background-color: #2d3436;
+  color: #fab1a0;
+}
+.menu a {
+  text-align: justify;
+  text-decoration: none;
+  color: #dfe6e9;
+}
+
+.menu li {
+  display: flex;
+  padding-left: 1.5em;
+  line-height: 2.5em;
+  transition: background-color 0.1s ease-in-out;
+}
+.dashboardIcon {
+  margin-top: 0.3em;
+  margin-right: 0.5em;
+}
+.menu li:hover {
+  background-color: #636e72;
+}
+.menu ul {
+  width: 100%;
+}
