@@ -1,5 +1,5 @@
 .sidebarContainer {
-  max-height: 100vh;
+  min-height: 100vh;
   min-width: 15vw;
 }
 .sidebar {
@@ -44,7 +44,7 @@
   display: flex;
   padding-left: 1.5em;
   line-height: 2.5em;
-  transition: background-color 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .dashboardIcon {
   margin-top: 0.3em;
@@ -52,6 +52,7 @@
 }
 .menu li:hover {
   background-color: #636e72;
+  transform: translateY(-10px);
 }
 .menu ul {
   width: 100%;
