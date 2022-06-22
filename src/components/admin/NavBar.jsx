@@ -9,46 +9,42 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 const NavBar = () => {
   return (
     <div className="sidebarContainer">
-      <aside class="sidebar">
+      <aside className="sidebar">
         <h3>Aeris Software</h3>
 
         <div className="sidebarImg">
-          <img
-            src="https://comofuncionaque.com/wp-content/uploads/2015/05/La-persona-es-un-ser-capaz-de-pensar-razonar-tener-sentimientos-y-emociones.jpg.jpg"
-            alt=""
-            srcset=""
-          />
+          <img src="https://comofuncionaque.com/wp-content/uploads/2015/05/La-persona-es-un-ser-capaz-de-pensar-razonar-tener-sentimientos-y-emociones.jpg.jpg" />
         </div>
 
         <span className="sidebarUserName">
           <p>Usuario Nuevo</p>
         </span>
 
-        <nav class="menu">
+        <nav className="menu">
           <ul>
             <li>
               <span className="dashboardIcon">
                 <DashboardIcon />
               </span>
-              <Link to="/admin/dashboard">Panel Principal</Link>
+              <Link to="/adminpage/dashboard">Panel Principal</Link>
             </li>
             <li>
               <span className="dashboardIcon">
                 <PersonIcon />
               </span>
-              <Link to="/admin/register">Registrar Datos</Link>
+              <Link to="/adminpage/register">Registrar Datos</Link>
             </li>
             <li>
               <span className="dashboardIcon">
                 <BrowserUpdatedIcon />
               </span>
-              <Link to="/admin/modify">Modificar Datos</Link>
+              <Link to="/adminpage/modify">Modificar Datos</Link>
             </li>
             <li>
               <span className="dashboardIcon">
                 <ExitToAppIcon />
               </span>
-              <Link to="/admin/logout">Cerrar Sesión</Link>
+              <Link to="/adminpage/logout">Cerrar Sesión</Link>
             </li>
           </ul>
         </nav>
