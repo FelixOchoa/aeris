@@ -1,13 +1,13 @@
 import Swal from "sweetalert2";
 
-const Alerta = (title, icon) => {
+const Alerta = (icon, title) => {
   Swal.fire({
     toast: true,
     icon: icon,
     title: title,
     position: "bottom",
     showConfirmButton: false,
-    timer: 1500,
+    timer: 3000,
     timerProgressBar: true,
   });
 };
