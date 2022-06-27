@@ -5,7 +5,7 @@ const Alerta = (icon, title) => {
     toast: true,
     icon: icon,
     title: title,
-    position: "bottom",
+    position: "bottom-right",
     showConfirmButton: false,
     timer: 3000,
     timerProgressBar: true,

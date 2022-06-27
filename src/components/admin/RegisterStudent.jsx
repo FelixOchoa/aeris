@@ -5,18 +5,15 @@ import axios from "axios";
 import Alerta from "../Alerts";
 
 const RegisterStudent = () => {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit } = useForm();
   const url = "https://aeris.azurewebsites.net/api/User/register-users";
 
   const onSubmit = async (info) => {
     try {
       const response = await axios.post(url, info);
-      const { nombres, apellidos, rol } = response.data;
+      const { rol } = response.data;
       if (response.status === 200) {
-        Alerta(
-          `success`,
-          `Se pudo registrar al ${rol} ${nombres} ${apellidos} con éxito`
-        );
+        Alerta(`success`, `Se pudo registrar al ${rol} con éxito`);
         document.getElementsByClassName("studentForm")[0].reset();
       }
     } catch (error) {
