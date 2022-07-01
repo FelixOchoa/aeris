@@ -20,39 +20,37 @@ const Login = () => {
   //   }
   // };
   return (
-    <div className="login">
-      <div className="loginLogo">
-        <img src="https://i.imgur.com/KzIJpu4.jpeg" alt="logo" />
-        <div className="loginContainer">
-          <form className="loginForm" onSubmit={handleSubmit(onSubmit)}>
-            <label className="loginLabel" htmlFor="label-email">
-              Correo electrónico
-            </label>
-            <input
-              className="loginInput"
-              type="text"
-              name="email"
-              {...register("email")}
-              placeholder="Escribe tu correo..."
-            />
-            <label className="loginLabel" htmlFor="label-passwordpassword">
-              Contraseña
-            </label>
-            <input
-              className="loginInput"
-              type="password"
-              name="password"
-              {...register("password")}
-              placeholder="Escribe tu contraseña..."
-            />
-            <span className="loginSpan">
-              <a href="/register">¿Olvidaste tu contraseña?</a>
-            </span>
-            <button className="loginButton" type="submit">
-              Iniciar Sesión
-            </button>
-          </form>
-        </div>
+    <div className="loginBody">
+      <div className="imageContainer">
+        <a href="#">Aeris Software</a>
+      </div>
+      <div className="loginContainer">
+        <h1>Bienvenido de Nuevo</h1>
+        <h3>Por favor, ingrese sus datos.</h3>
+        <form action="" className="formLogin">
+          <label htmlFor="">Nombre de Usuario</label>
+          <input
+            className="text"
+            type="email"
+            name=""
+            placeholder="Escribe tu nombre de usuario"
+          />
+          <label htmlFor="">Contraseña</label>
+          <input
+            className="text"
+            type="password"
+            name=""
+            placeholder="·······"
+          />
+          <div className="formSection">
+            <input type="checkbox" name="" id="" />
+            <label htmlFor="">Recordarme</label>
+            <a className="forgot" htmlFor="">
+              ¿Olvidaste tu Contraseña?{" "}
+            </a>
+          </div>
+          <input className="button" type="button" value="Iniciar Sesión" />
+        </form>
       </div>
     </div>
   );

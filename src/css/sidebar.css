@@ -1,58 +1,59 @@
-.sidebarContainer {
-  min-height: 100vh;
-  background-color: #2d3436;
-  min-width: 15vw;
-}
-.sidebar {
+.navBarBody {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background-color: #2d3436;
-  color: #636e72;
-  padding-top: 2em;
-}
-.sidebarImg img {
-  margin-top: 2em;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-}
-.sidebarUserName p {
-  margin-top: 1em;
-  color: #dfe6e9;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2em;
-  width: 100%;
-  background-color: #2d3436;
-  color: #fab1a0;
-}
-.menu a {
-  text-align: justify;
-  text-decoration: none;
-  color: #dfe6e9;
-}
-
-.menu li {
-  display: flex;
-  padding-left: 1.5em;
-  line-height: 2.5em;
-  transition: all 0.1s ease-in-out;
-}
-.dashboardIcon {
-  margin-top: 0.3em;
-  margin-right: 0.5em;
-}
-.menu li:hover {
-  background-color: #636e72;
-  transform: translateY(-10px);
+  padding: 0px 50px;
+  min-width: 100%;
+  min-height: 10vh;
+  background-color: white;
+  box-shadow: 0px 0px 13px -12px #000000;
+  margin-bottom: 3px;
 }
 .menu ul {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111828;
+  transition: ease-in-out 0.2s;
+}
+.menu a:hover {
+  color: #0f598a;
+}
+
+.profileSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.profileSection .sidebarUserName {
+  padding: 10px 10px;
+  background-color: #c3e1fc;
+  color: #0f598a;
+  border-radius: 5px;
+}
+.profileSection img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.profileSection a {
+  color: #111828;
+}
+.logoSection {
+  color: #111828;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+.logoSection:hover {
+  color: #0f598a;
 }

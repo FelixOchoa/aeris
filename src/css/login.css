@@ -1,97 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.02em;
 }
 html,
 body {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   height: 100%;
   width: 100%;
-  font-family: "Jost", sans-serif;
 }
-
-.login {
+.loginBody {
   display: flex;
+  flex-direction: row;
   height: 100vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  background-color: #fab1a0;
-  color: #2d3436;
 }
-
+.imageContainer {
+  min-height: 100%;
+  width: 70%;
+  background-image: url("https://elpilon.com.co/wp-content/uploads/2022/01/UPCjpg.jpg");
+  background-size: cover;
+}
+.imageContainer a {
+  position: absolute;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
 .loginContainer {
-  width: 500px;
-  background-color: snow;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.43);
-}
-
-.loginForm {
   display: flex;
   flex-direction: column;
-  padding: 80px 80px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 45px;
+  gap: 10px;
 }
-.loginLabel {
-  font-weight: 500;
-  font-size: 20px;
-  margin-left: 1em;
-  line-height: 2em;
+.loginContainer h1 {
+  align-self: flex-start;
+  font-size: 24px;
+  font-weight: 600;
 }
-.loginInput {
-  background-color: #d9d9d9;
-  border: none;
-  padding: 1em;
-  border-radius: 1em;
-  font-size: 16px;
-  color: #5e6568;
-  outline: none;
+.loginContainer h3 {
+  color: #848f9f;
+
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: normal;
+}
+.formLogin {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.formLogin label {
+  color: #111828;
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.formLogin .text {
+  border: 1px solid #d2d4d8;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  border-radius: 0.5em;
+  font-size: 14px;
+  width: 100%;
   text-indent: 10px;
+  color: rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.2s;
+}
+.formLogin .text:focus {
+  border: 1px solid rgba(45, 115, 130, 0.25);
+  outline: none;
 }
 
-.loginButton {
-  padding: 1em;
+.formSection {
+  width: 100%;
+}
+.formSection label,
+input {
+  float: left;
+  margin-right: 5px;
+}
+.formSection a {
+  color: #111828;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+.formLogin .button {
+  background-color: #101727;
+  margin-top: 20px;
   border: none;
-  border-radius: 1em;
-  background-color: #fab1a0;
-  font-size: 16px;
+  border-radius: 0.5em;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
   font-weight: 600;
   color: snow;
   cursor: pointer;
-  margin-top: 1.5em;
   transition: background-color 0.4s ease-out 100ms;
+  animation-duration: 0.5s;
+  animation-name: slidein;
 }
-.loginButton:hover {
-  background-color: #ff9899;
+.formLogin .button:hover {
+  background-color: #353e4d;
 }
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
 
-.loginSpan {
-  text-align: center;
-  margin-top: 1em;
-  text-align: left;
-  margin-left: 1em;
-}
-.loginSpan a {
-  font-weight: 500;
-  font-size: 14px;
-  text-decoration: none;
-  color: #2d3436;
-  cursor: pointer;
-}
-.loginLogo {
-  display: flex;
-}
-.loginLogo img {
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.43);
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  pointer-events: none;
-}
-.homepageContainer {
-  display: flex;
+  to {
+    margin-top: 0%;
+  }
 }
