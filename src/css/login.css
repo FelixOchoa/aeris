@@ -99,7 +99,7 @@ input {
   font-weight: bold;
 }
 .formLogin .button {
-  background-color: #101727;
+  background-color: #1d90f4;
   margin-top: 20px;
   border: none;
   border-radius: 0.5em;
@@ -114,7 +114,7 @@ input {
   animation-name: slidein;
 }
 .formLogin .button:hover {
-  background-color: #353e4d;
+  background-color: #1d90f496;
 }
 @keyframes slidein {
   from {

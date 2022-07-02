@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../css/sidebar.css";
+import "../../css/navbar.css";
 import SettingsIcon from "@mui/icons-material/Settings";
 
 const NavBar = () => {
@@ -32,7 +32,7 @@ const NavBar = () => {
           <SettingsIcon fontSize="small"></SettingsIcon>
         </a>
         <span className="sidebarUserName">
-          <p>Usuario</p>
+          <p>Hola, Felix</p>
         </span>
         <img src="https://pbs.twimg.com/profile_images/1512484281460957185/fUxCPt0a_400x400.jpg" />
       </div>
