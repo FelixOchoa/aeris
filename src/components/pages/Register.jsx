@@ -23,56 +23,54 @@ const Register = () => {
 
   return (
     <div className="registerBody">
-      <div className="registerSection">
-        <h1>Crear un nuevo usuario</h1>
-        <p>Puede registrar un Docente o un Estudiante.</p>
+      <h1>Crear un nuevo usuario</h1>
+      <p>Puede registrar un Docente o un Estudiante.</p>
 
-        <form className="registerForm" onSubmit={handleSubmit(onSubmit)}>
-          <div className="formGroupRow">
-            <div className="inputText">
-              <label htmlFor="name">Nombre</label>
-              <input type="text" placeholder="" {...register("nombre")} />
-            </div>
-            <div className="inputText">
-              <label htmlFor="name">Apellidos</label>
-              <input type="text" placeholder="" {...register("apellidos")} />
-            </div>
+      <form className="registerForm" onSubmit={handleSubmit(onSubmit)}>
+        <div className="formGroupRow">
+          <div className="inputText">
+            <label htmlFor="name">Nombre</label>
+            <input type="text" placeholder="" {...register("nombre")} />
           </div>
-          <div className="formGroupColumn">
-            <div className="inputText">
-              <label htmlFor="name">Identificación</label>
-              <input type="number" {...register("identificacion")} />
-            </div>
-            <div className="inputText">
-              <label htmlFor="name">Nombre de Usuario</label>
-              <input type="text" {...register("username")} />
-            </div>
-            <div className="inputText">
-              <label htmlFor="name">Contraseña</label>
-              <input type="password" {...register("password")} />
-            </div>
+          <div className="inputText">
+            <label htmlFor="name">Apellidos</label>
+            <input type="text" placeholder="" {...register("apellidos")} />
           </div>
-          <div className="formGroupRow">
-            <div className="inputText">
-              <label htmlFor="name">Tipo de Usuario</label>
-              <select
-                name="selectText"
-                className="selectText"
-                id="selectTypeUser"
-                {...register("rol")}
-              >
-                <option value="Estudiante">Estudiante</option>
-                <option value="Docente">Docente</option>
-              </select>
-            </div>
-            <div className="inputText">
-              <label htmlFor="name">Edad</label>
-              <input type="number" {...register("edad")} />
-            </div>
+        </div>
+        <div className="formGroupColumn">
+          <div className="inputText">
+            <label htmlFor="name">Identificación</label>
+            <input type="number" {...register("identificacion")} />
           </div>
-          <input value="Crear usuario" type="submit" className="inputButton" />
-        </form>
-      </div>
+          <div className="inputText">
+            <label htmlFor="name">Nombre de Usuario</label>
+            <input type="text" {...register("username")} />
+          </div>
+          <div className="inputText">
+            <label htmlFor="name">Contraseña</label>
+            <input type="password" {...register("password")} />
+          </div>
+        </div>
+        <div className="formGroupRow">
+          <div className="inputText">
+            <label htmlFor="name">Tipo de Usuario</label>
+            <select
+              name="selectText"
+              className="selectText"
+              id="selectTypeUser"
+              {...register("rol")}
+            >
+              <option value="Estudiante">Estudiante</option>
+              <option value="Docente">Docente</option>
+            </select>
+          </div>
+          <div className="inputText">
+            <label htmlFor="name">Edad</label>
+            <input type="number" {...register("edad")} />
+          </div>
+        </div>
+        <input value="Crear usuario" type="submit" className="inputButton" />
+      </form>
     </div>
   );
 };
