@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import Alerta from "../Alerts";
-import "../../css/register.css";
+import "../css/register.css";
 
 const Register = () => {
   const { register, handleSubmit } = useForm();

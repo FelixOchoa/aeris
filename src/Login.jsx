@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 // import axios from "axios";
-import "../css/login.css";
+import "./css/login.css";
 
 const Login = () => {
   const navigate = useNavigate();

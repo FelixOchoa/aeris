@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../css/navbar.css";
+import "../css/navbar.css";
 import SettingsIcon from "@mui/icons-material/Settings";
 
 const NavBar = () => {
@@ -16,13 +16,13 @@ const NavBar = () => {
               <Link to="/dashboard">Inicio</Link>
             </li>
             <li>
-              <Link to="/register">Registrar</Link>
+              <Link to="/register">Registro</Link>
             </li>
             <li>
-              <Link to="/modify">Modificar</Link>
+              <Link to="/teachers">Docentes</Link>
             </li>
             <li>
-              <Link to="/logout">Eliminar</Link>
+              <Link to="/students">Estudiantes</Link>
             </li>
           </ul>
         </nav>

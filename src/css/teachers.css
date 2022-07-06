@@ -1,0 +1,49 @@
+.teacherBody {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 40px 30px 40px;
+  gap: 10px;
+}
+.teacherSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.teacherSection .registerButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 13px 10px;
+  border-radius: 10px;
+  background-color: #1d90f4;
+  color: white;
+}
+.registerButton a {
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+.teacherBody p {
+  color: #a1a6af;
+}
+.teacherSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafbff;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+.teacherSearch input {
+  border: 1px solid #e3e5eb;
+  border-radius: 10px;
+  padding: 15px;
+  width: 96%;
+  transition: ease-in-out 0.2s;
+}
+.teacherSearch input:focus {
+  border: 1px solid #9a9ca1;
+  outline: none;
+}

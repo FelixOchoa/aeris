@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./components/Login";
-import HomePageAdmin from "./components/pages/HomePageAdmin";
-import NotFound from "./components/pages/NotFound";
+import Login from "./Login";
+import HomePageAdmin from "./pages/HomePageAdmin";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
