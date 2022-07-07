@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/navbar.css";
 import SettingsIcon from "@mui/icons-material/Settings";
+import { links } from "../components/NavBar/NavBarStruct";
 
 const NavBar = () => {
   return (
@@ -12,18 +13,13 @@ const NavBar = () => {
       <div className="navSection">
         <nav className="menu">
           <ul>
-            <li>
-              <Link to="/dashboard">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/register">Registro</Link>
-            </li>
-            <li>
-              <Link to="/teachers">Docentes</Link>
-            </li>
-            <li>
-              <Link to="/students">Estudiantes</Link>
-            </li>
+            {links.map((link, index) => {
+              return (
+                <li key={index}>
+                  <Link to={link.path}>{link.name}</Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>

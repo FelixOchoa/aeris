@@ -18,6 +18,10 @@
   border-radius: 10px;
   background-color: #1d90f4;
   color: white;
+  transition: ease-in-out 0.3s;
+}
+.teacherSection .registerButton:hover {
+  background-color: #1d90f496;
 }
 .registerButton a {
   font-weight: 500;
@@ -46,4 +50,19 @@
 .teacherSearch input:focus {
   border: 1px solid #9a9ca1;
   outline: none;
+}
+.editProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  color: white;
+  background-color: #1d90f4;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+.editProfile:hover {
+  background-color: #1d90f496;
 }

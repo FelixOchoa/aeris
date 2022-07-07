@@ -1,0 +1,30 @@
+.notFoundBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.notFoundBody h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.notFoundBody p {
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+}
+.notFoundBody a {
+  text-decoration: none;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #1d90f4;
+  padding: 13px 10px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+.notFoundBody a:hover {
+  background-color: #1d90f496;
+}
