@@ -4,6 +4,8 @@ import Dashboard from "./Dashboard";
 import NavBar from "./NavBar";
 import Register from "./Register";
 import NotFound from "./NotFound";
+import Teachers from "./Teachers";
+import ProfileEdit from "./ProfileEdit";
 
 const HomePageAdmin = () => {
   return (
@@ -13,6 +15,8 @@ const HomePageAdmin = () => {
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/editprofile" element={<ProfileEdit />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
