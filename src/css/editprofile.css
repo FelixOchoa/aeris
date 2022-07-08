@@ -1,0 +1,94 @@
+.profileBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.profileHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.profileHeader img {
+  margin-top: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.detailProfile h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.detailProfile h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.buttonProfile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 200px;
+}
+.buttonProfile .cancelButton {
+  background-color: transparent;
+  border: 1px solid #ebecef;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: ease-in-out 0.3s;
+}
+.buttonProfile .cancelButton:hover {
+  background-color: #cbcbcc;
+}
+.buttonProfile .saveButton {
+  background-color: #1d90f4;
+  border: 1px solid #1d90f4;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: ease-in-out 0.3s;
+}
+.buttonProfile .saveButton:hover {
+  background-color: #1d90f496;
+}
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  width: 830px;
+  gap: 20px;
+}
+.profileContent hr {
+  height: 1px;
+  border: none;
+  background-color: #cfd1d5;
+}
+.profileContent .inputText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileContent .inputText label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #a1a6af;
+}
+.profileContent .inputText input {
+  border: 1px solid #f2f6fc;
+  background-color: #f2f6fc;
+  outline: none;
+  text-indent: 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 12px 0px;
+  width: 65%;
+}
