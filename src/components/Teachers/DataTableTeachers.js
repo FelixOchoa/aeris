@@ -25,6 +25,7 @@ const DataTableTeachers = (props) => {
       <DataTable
         columns={columns}
         data={teachers}
+        noDataComponent={<p>No hay información para mostrar.</p>}
         pagination
         paginationComponentOptions={paginationComponentOptions}
       />
