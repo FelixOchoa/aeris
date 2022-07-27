@@ -12,7 +12,7 @@ export const links = [
     path: "/teachers",
   },
   {
-    name: "Alumnos",
+    name: "Estudiantes",
     path: "/students",
   },
 ];
